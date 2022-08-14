@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>First site</title>
+</head>
+<body>
+    <div class="container">
+        <div class="about">
+            <img src="1245.jpg" alt="Photo" class="CVPhoto">
+            <div class="textinfo">
+                <h1>Святослав Микицький</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam facere atque repudiandae ratione, officiis ipsam qui recusandae repellat nihil? Vero quam ex hic deleniti aut dolore facilis veritatis placeat.</p>
+
+                <h2>Соціальні мережі</h2>
+                <a href="https://www.instagram.com/sviet1k/" target="_blank">Instagram</a> | 
+                <a href="https://t.me/apple_aa" target="_blank">Telegram</a>
+
+            </div>      
+        </div>
+        <div class="contacts">
+            <h2>Контакти</h2>
+            <span>Email:</span><a href="mailto:@example.com">@example.com</a> <br>
+            <span>Phone:</span><a href="tel:+380984824918">+380984824918</a>
+        </div>
+         <div class="bg-yellow card">
+            <h2>Навички</h2>
+            <ul class="list" type="disc" >
+                <li>Java</li>
+                <li>C#</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+        <div class="card bg-green">
+            <h2>Освіта</h2>
+            <ul>
+                <li>Middle school</li>
+                <li>High school</li>
+                <li>NULP 2 years</li>
+                <li>XXX Frontend developer</li>
+            </ul>
+        </div>  
+        
+        <div class="card bg-red">
+            <h2>Досвід</h2>
+            <ol type="I">
+                <li>4 month C</li>
+                <li>4 month Python</li>
+                <li>4 month Java OOP</li>
+                <li>Started the project with Unity C#</li>
+            </ol>
+         </div>
+
+        <div class="card bg-blue">
+            <h2>Youtube chanel</h2>
+            <a href="https://www.youtube.com/channel/UCI7MBDBqbsSbEqeYlwn0Fnw" target="_blank"> Youtube</a> 
+        </div>
+        <div class="feedback">
+            <h2>Contact with me</h2>
+            <form action="">
+                <div class="raw">
+                    <div class="formgroup">
+                        <label for="name">Ваше ім'я</label>
+                        <input  type="text"id="name" placeholder="Type here...">
+                        </div>
+                        
+                        <div class="formgroup">
+                        <label for="email">Ваш email</label>
+                        <input type="text" id="email" placeholder=" Type here">
+                    </div>
+                </div>
+                <input class="btn" type="submit" value="Звязатися">
+            </form>
+        </div>
+        <div class="position">
+            <div class="box">
+                <h2>Hi!</h2>
+            </div>
+        </div>
+    </div>  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
